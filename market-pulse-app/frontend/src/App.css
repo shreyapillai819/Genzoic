@@ -1,0 +1,30 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+input {
+  padding: 0.5rem;
+  width: 200px;
+}
+button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+}
+.card {
+  background: white;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.bullish { color: green; }
+.bearish { color: red; }
+.neutral { color: gray; }
+pre {
+  text-align: left;
+  margin-top: 1rem;
+  background: #eee;
+  padding: 1rem;
+  overflow-x: auto;
+}
