@@ -27,16 +27,28 @@
 
 ---
 
-
 ## Project Structure
 market-pulse-app/
-├── src/                 # FastAPI backend
-│   ├── main.py
-│   ├── services/
-│   ├── models/
-│   ├── utils/
-│   ├── .env             # API keys (not committed)
-│   └── requirements.txt
-└── frontend/            # React frontend
-    ├── src/App.js
-    └── public/index.html
+├── src/                          # 🔙 FastAPI backend
+│   ├── main.py                   # Entry point for FastAPI app
+│
+│   ├── services/                 # Handles momentum, news, and pulse logic
+│   │   ├── momentum.py
+│   │   ├── news.py
+│   │   └── pulse.py
+│
+│   ├── models/                   # Pydantic response models
+│   │   └── response_model.py
+│
+│   ├── utils/                    # Caching and helper functions
+│   │   └── cache.py
+│
+│   ├── .env                      # 🔑 API keys (not committed)
+│   └── requirements.txt          # Python dependencies
+│
+└── frontend/                     # 🖥️ React frontend
+    ├── src/
+    │   └── App.js                # Main React component
+    └── public/
+        └── index.html            # Root HTML
+
